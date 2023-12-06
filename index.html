@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/HoverActive.css">
+    <link rel="stylesheet" href="css/Display.css">
+    <link rel="stylesheet" href="css/Botones.css">
+    <link rel="stylesheet" href="css/Estructuras.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <section class="calculadora">
+        <div class="display" name="display">0</div>
+        <table class="lista-digitos">
+            <tr class="columnas">
+                <td class="botones operador quitar" name="quitar">DEL</td>
+                <td class="botones operador eliminar">C</td>
+                <td class="botones operador potencia" name="operador">x<sup>2</sup></td>
+                <td class="botones operador division" name="operador">/</td>
+            </tr>
+            <tr class="columnas">
+                <td class="botones numero" name="numero">7</td>
+                <td class="botones numero" name="numero">8</td>
+                <td class="botones numero" name="numero">9</td>
+                <td class="botones operador multiplicacion" name="operador">x</td>
+            </tr>
+            <tr class="columnas">
+                <td class="botones numero" name="numero">4</td>
+                <td class="botones numero" name="numero">5</td>
+                <td class="botones numero" name="numero">6</td>
+                <td class="botones operador resta" name="operador">-</td>
+            </tr>
+            <tr class="columnas">
+                <td class="botones numero" name="numero">1</td>
+                <td class="botones numero" name="numero">2</td>
+                <td class="botones numero" name="numero">3</td>
+                <td class="botones operador suma" name="operador">+</td>
+            </tr>
+            <tr class="columnas">
+                <td class="botones negativo">+/-</td>
+                <td class="botones numero" name="numero">0</td>
+                <td class="botones punto">.</td>
+                <td class="botones igual" name="igual">=</td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="operaciones.js"></script>
+
+</body>
+</html>

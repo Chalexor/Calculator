@@ -1,0 +1,18 @@
+.calculadora {
+    width: 60%;
+    min-width:30vh;
+    max-width: 60vh;
+    margin: auto;
+    padding: .2vh;
+    background-color: #1C1C1C;
+    box-shadow: 10px 15px 50px #000000;
+    border-radius: 1vh;
+    border: none;
+}
+
+.lista-digitos {
+    width: 100%;
+    table-layout: fixed;
+    min-width:30vh;
+    background-color: #1C1C1C;
+}

@@ -1,0 +1,10 @@
+.display{
+    padding: 3vh 1.5vh .1vh;
+    background-color: #1C1C1C;
+    color: aliceblue;
+    font-size: 3.5vh;
+    text-align: end;
+    border-radius: 1vh 1vh 0vh 0vh;
+    border: none;
+    flex: 0 1 100%;
+}

@@ -1,0 +1,23 @@
+.numero:hover {
+    background-color: #323232;
+}
+
+.punto:hover {
+    background-color: #323232;
+}
+
+.negativo:hover {
+    background-color: #323232;
+}
+
+.operador:hover {
+    background-color: #3C3C3C;
+}
+
+.igual:hover {
+    opacity: 70%;
+}
+
+.botones:active {
+    opacity: 50%;
+}
