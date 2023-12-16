@@ -1,64 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const numero = document.getElementsByName("numero");
-    const operador = document.getElementsByName('operador');
-    const quitar = document.getElementsByName('quitar')[0];
-    const eliminar = document.getElementsByClassName('eliminar')[0];
-    var igual = document.getElementsByName('igual')[0];
-    var display = document.querySelector('.display');
+var numeros = document.querySelectorAll('.botones.numero');
+var display = document.querySelector('.display');
 
-    var opeActual = '';
-    var opeAnterior = '';
-    var operacion = undefined;
+numeros.forEach(function(botonNumero) {
+    botonNumero.addEventListener('click', function() {
+        // Obtener el número asociado al botón
+        var numeroPresionado = botonNumero.getAttribute('data-numero');
 
-    numero.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            agregarAlDisplay(btn.innerText);
-        });
+        // Obtener el contenido actual del display
+        var contenidoDisplay = display.textContent;
+
+        // Verificar si el contenido del display es "0" y reemplazarlo si es necesario
+        if (contenidoDisplay === '0') {
+            display.textContent = numeroPresionado;
+        } else {
+            // Concatenar el número al contenido actual del display
+            display.textContent += numeroPresionado;
+        }
     });
-
-    operador.forEach((btn) => {
-        btn.addEventListener('click', () => {
-            agregarOperadorAlDisplay(btn.innerText);
-        });
-    });
-
-    igual.addEventListener('click', () => {
-        calcular();
-        actualizarDisplay();
-    });
-
-    quitar.addEventListener('click', () => {
-        accionQuitar();
-        actualizarDisplay();
-    });
-
-    eliminar.addEventListener('click', () => {
-        actualizarEliminar();
-        actualizarDisplay();
-    });
-
-    function agregarAlDisplay(valor) {
-        opeActual += valor;
-        actualizarDisplay();
-    }
-
-    function agregarOperadorAlDisplay(operador) {
-        opeActual += ' ' + operador + ' ';
-        actualizarDisplay();
-    }
-
-    function actualizarDisplay() {
-        display.innerText = opeActual;
-    }
-
-    // ... (código existente)
-
-    function agregarOperadorAlDisplay(operador) {
-        opeActual += ' ' + operador + ' ';
-        actualizarDisplay();
-        // También puedes almacenar la operación actual para su posterior cálculo
-        operacionActual = operador;
-        valorAnterior = opeActual; // Guardar el valor anterior antes de la operación
-        valorActual = ''; // Limpiar el valor actual
-    }
 });

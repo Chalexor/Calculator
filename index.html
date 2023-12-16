@@ -12,43 +12,48 @@
 </head>
 <body>
     <section class="calculadora">
-        <div class="display" name="display">0</div>
+        <div class="display">0</div>
         <table class="lista-digitos">
             <tr class="columnas">
-                <td class="botones operador quitar" name="quitar">DEL</td>
+                <td class="botones operador quitar">DEL</td>
                 <td class="botones operador eliminar">C</td>
-                <td class="botones operador potencia" name="operador">x<sup>2</sup></td>
-                <td class="botones operador division" name="operador">/</td>
+                <td class="botones operador potencia">x<sup>2</sup></td>
+                <td class="botones operador division">/</td>
             </tr>
             <tr class="columnas">
-                <td class="botones numero" name="numero">7</td>
-                <td class="botones numero" name="numero">8</td>
-                <td class="botones numero" name="numero">9</td>
-                <td class="botones operador multiplicacion" name="operador">x</td>
+                <td class="botones numero" data-numero="7">7</td>
+                <td class="botones numero" data-numero="8">8</td>
+                <td class="botones numero" data-numero="9">9</td>
+                <td class="botones operador multiplicacion">x</td>
             </tr>
             <tr class="columnas">
-                <td class="botones numero" name="numero">4</td>
-                <td class="botones numero" name="numero">5</td>
-                <td class="botones numero" name="numero">6</td>
-                <td class="botones operador resta" name="operador">-</td>
+                <td class="botones numero" data-numero="4">4</td>
+                <td class="botones numero" data-numero="5">5</td>
+                <td class="botones numero" data-numero="6">6</td>
+                <td class="botones operador resta">-</td>
             </tr>
             <tr class="columnas">
-                <td class="botones numero" name="numero">1</td>
-                <td class="botones numero" name="numero">2</td>
-                <td class="botones numero" name="numero">3</td>
-                <td class="botones operador suma" name="operador">+</td>
+                <td class="botones numero" data-numero="1">1</td>
+                <td class="botones numero" data-numero="2">2</td>
+                <td class="botones numero" data-numero="3">3</td>
+                <td class="botones operador suma">+</td>
             </tr>
             <tr class="columnas">
                 <td class="botones negativo">+/-</td>
-                <td class="botones numero" name="numero">0</td>
+                <td class="botones numero" data-numero="0">0</td>
                 <td class="botones punto">.</td>
-                <td class="botones igual" name="igual">=</td>
+                <td class="botones igual">=</td>
             </tr>
         </table>
     </section>
 
     <script src="index.js"></script>
-    <script src="operaciones.js"></script>
+    <script src="clearEntry.js"></script>
+    <script src="borrarTodo.js"></script>
+    <script src="borrarTodo.js"></script>
+    <script src="potencia.js"></script>
+    <script src="suma.js"></script>
+
 
 </body>
 </html>
